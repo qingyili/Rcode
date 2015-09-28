@@ -20,7 +20,7 @@ CV<-function(k,f,dat,y){
     ff=lm(as.formula(formula), data =tr)
     fx = predict(ff, new = te)
     te.y<-(eval(parse(text=s2)))
-    m=(mean(te.y-fx))
+    m=(mean(te.y-fx)^2)
        
     mspe[i]=(m)
     index=i*ss+1
