@@ -1,6 +1,7 @@
 #======K-FOLD CV stepwise function====
 #using a stepwise selection on each fold of the training to correct for selection bias
 #stepwise selection starting from the null model
+
 stepCV<-function(k,dat,y){
   #strings for generating formula 
   s1<- paste(deparse(substitute(y)),"~")
